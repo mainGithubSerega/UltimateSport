@@ -786,6 +786,7 @@ body {
   background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 35px;
   margin-bottom: 10px;
 }
@@ -953,6 +954,34 @@ body {
   .page-matches__dotts span {
     font-size: 50px;
   }
+  .page-matches__logo {
+    flex-direction: column;
+  }
+  .page-matches__picture--reverse {
+    order: 1;
+  }
+  .page-matches__teamName--reverse {
+    order: 2;
+  }
+  .page-matches__teamName {
+    text-align: center;
+  }
+  .page-matches__teamName {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .page-matches__picture {
+    margin: 0 auto;
+  }
+  .page-matches__latest {
+    flex-basis: 57%;
+  }
+  .page-matches__latest--future {
+    flex-basis: 36%;
+  }
+  .page-matches__latest {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 445px) {
@@ -965,5 +994,23 @@ body {
   }
   .page-matches__match {
     padding: 55px 35px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-matches__list {
+    display: none;
+  }
+  .page-matches__latest--future {
+    flex-basis: 50%;
+  }
+  .page-matches__latest {
+    flex-basis: 50%;
+  }
+  .page-matches__latest--last {
+    clip-path: none;
+  }
+  .page-matches__game {
+    padding: 20px;
   }
 }
