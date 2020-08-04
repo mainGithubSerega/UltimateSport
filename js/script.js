@@ -57,3 +57,54 @@ const slider = (slides, prew, next) => {
 
 }
 slider('.slider-content', '.arr-next', '.arr-prev');
+function timer(id, deadline){
+    const getTime = (finishTime) => {
+        const t = Date.parse(finishTime) - Date.parse(new Date()),
+              seconds = Math.floor((t / 1000) % 60),
+              minutes = Math.floor((t / 1000 / 60) % 60),
+              hours = Math.floor((t / 1000 / 60 / 60) % 24),
+              days = Math.floor((t / 1000 / 60 / 60 / 24))
+        
+        return {
+            'total' : t,
+            'seconds' : seconds,
+            'minutes' : minutes,
+            'hours' : hours,
+            'days' : days
+        }
+    }
+    function setClock(selector, finishTime){
+        const time = document.querySelector(selector),
+              seconds = time.querySelector('.seconds'),
+              minutes = time.querySelector('.minutes'),
+              hours = time.querySelector('.hours'),
+              days = time.querySelector('.days'),
+              timeInterval = setInterval(getInterval, 1000)
+        
+
+        function getInterval () {
+            const t = getTime(finishTime)
+            seconds.textContent = zero(t.seconds)
+            minutes.textContent = zero(t.minutes)
+            hours.textContent = zero(t.hours)
+            days.textContent = zero(t.days)
+            
+            if(t.total <= 0){
+                seconds.textContent = '00'
+                minutes.textContent = '00'
+                hours.textContent = '00'
+                days.textContent = '00'
+                clearInterval(timeInterval)
+            }
+        }
+    }
+    function zero (num) {
+        if(num <= 9){
+            return '0' + num
+        } else {
+            return num
+        }
+    }
+    setClock(id, deadline)
+}
+timer('.slider-content__timer', '2020-08-29');

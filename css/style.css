@@ -78,6 +78,20 @@ body {
   padding: 0 10px;
 }
 
+.main-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 38px;
+  color: #1e2022;
+  margin-bottom: 15px;
+}
+
+.main-title span {
+  color: #ff5d6e;
+}
+
 .header-top {
   padding: 15px 0;
   display: flex;
@@ -247,8 +261,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.64px;
-  line-height: 100px;
-  height: 97px;
+  line-height: 102px;
+  height: 96px;
   color: #ffffff;
   border-bottom: 4px solid transparent;
 }
@@ -476,7 +490,8 @@ body {
   display: block;
   font-size: 14px;
   letter-spacing: 0.55px;
-  line-height: 10px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .slider-content01 {
@@ -587,7 +602,7 @@ body {
   position: relative;
   z-index: 2;
   color: #ffffff;
-  flex-basis: 42%;
+  flex-basis: 38%;
 }
 
 .breaking-news__title::after {
@@ -627,5 +642,328 @@ body {
   }
   .breaking-news__title {
     flex-basis: 100%;
+  }
+}
+
+.page-matches {
+  padding: 85px 0 55px 0;
+}
+
+.page-matches__body {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.page-matches__column {
+  flex: 0 1 50%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.page-matches__match {
+  background: url("../images/matches-bg.png") no-repeat center/cover;
+  padding: 61px 55px;
+}
+
+.page-matches__text {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.page-matches__article {
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.page-matches__article span {
+  margin-top: 5px;
+  display: block;
+  color: #ff5d6e;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.page-matches__league {
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  color: #7e8990;
+}
+
+.page-matches__result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-matches__dotts span {
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: normal;
+  color: #ffffff;
+  display: block;
+  padding: 0 5px;
+}
+
+.page-matches__img {
+  width: 124px;
+  height: 153px;
+}
+
+.page-matches__img img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-matches__name {
+  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-matches__name span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  color: #dee8ee;
+  text-transform: initial;
+  margin-top: 5px;
+  font-weight: 400;
+  display: block;
+}
+
+.page-matches__number {
+  font-size: 64px;
+  text-align: right;
+  font-weight: 900;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.page-matches__number span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  margin-top: 10px;
+}
+
+.page-matches__number small {
+  display: block;
+  font-size: 11px;
+  color: #7e8990;
+  letter-spacing: 0.2px;
+}
+
+.page-matches__number--01 {
+  text-align: left;
+}
+
+.page-matches__btn {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.page-matches__btn a {
+  display: inline-block;
+  height: 30px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ff5d6e;
+  text-decoration: none;
+  padding: 0 20px;
+  border-radius: 30px;
+}
+
+.page-matches__game {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+  margin-bottom: 10px;
+}
+
+.page-matches__game--bg {
+  background-color: #dee8ee;
+}
+
+.page-matches__logo {
+  display: flex;
+  align-items: center;
+}
+
+.page-matches__picture {
+  width: 35px;
+  height: 50px;
+  margin-right: 11px;
+}
+
+.page-matches__picture img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-matches__picture--reverse {
+  order: 2;
+  margin-left: 11px;
+  margin-right: 0;
+}
+
+.page-matches__teamName {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.6px;
+  font-weight: 900;
+  color: #1e2022;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.page-matches__teamName span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #52616b;
+  display: block;
+  text-transform: initial;
+  margin-top: 3px;
+}
+
+.page-matches__teamName--reverse {
+  order: 1;
+}
+
+.page-matches__count {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  color: #1e2022;
+  text-align: center;
+}
+
+.page-matches__list {
+  display: flex;
+  margin-top: 6px;
+}
+
+.page-matches__link {
+  font-family: 'Raleway', sans-serif;
+  margin-right: 7px;
+  padding-right: 7px;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+}
+
+.page-matches__link:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.page-matches__link.page-matches__link:last-child::after {
+  display: none;
+}
+
+.page-matches__link a {
+  color: #ff5d6e;
+  text-decoration: none;
+}
+
+.page-matches__link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #6f7b82;
+  transform: rotate(25deg);
+}
+
+.page-matches__last {
+  display: flex;
+  text-align: center;
+  min-height: 50px;
+  background-color: #1e2022;
+}
+
+.page-matches__latest {
+  background-color: #ff5d6e;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  flex-basis: 60%;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.page-matches__latest--last {
+  clip-path: polygon(0 0, 87% 0, 84% 100%, 0% 100%);
+}
+
+.page-matches__latest--future {
+  background-color: #1e2022;
+  clip-path: none;
+  flex-basis: 40%;
+}
+
+@media (max-width: 1125px) {
+  .page-matches__body {
+    flex-wrap: wrap;
+  }
+  .page-matches__column {
+    flex-basis: 100%;
+  }
+  .page-matches__result {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 650px) {
+  .page-matches__img {
+    width: 90px;
+    height: 130px;
+    margin: 0 auto;
+  }
+  .page-matches__result {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 540px) {
+  .page-matches__number span {
+    display: none;
+  }
+  .page-matches__result {
+    align-items: center;
+  }
+  .page-matches__number {
+    font-size: 50px;
+  }
+  .page-matches__dotts span {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 445px) {
+  .page-matches__img {
+    width: 60px;
+    height: 90px;
+  }
+  .page-matches__name {
+    font-size: 12px;
+  }
+  .page-matches__match {
+    padding: 55px 35px;
   }
 }
