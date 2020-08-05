@@ -92,6 +92,10 @@ body {
   color: #ff5d6e;
 }
 
+.main-title--popular {
+  color: #ffffff;
+}
+
 .header-top {
   padding: 15px 0;
   display: flex;
@@ -1011,6 +1015,207 @@ body {
     clip-path: none;
   }
   .page-matches__game {
+    padding: 20px;
+  }
+}
+
+.page-popular {
+  background: url("../images/popular-bg.png") no-repeat center/cover;
+  padding: 100px 0;
+}
+
+.page-popular__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.page-popular__player {
+  flex-basis: 64.4%;
+  background-color: #c9d6df;
+  clip-path: polygon(0 0, 92% 0, 77% 100%, 0% 100%);
+}
+
+.page-popular__desc {
+  max-width: 250px;
+  margin: 0 0 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #3f4d57;
+  margin-top: 20px;
+}
+
+.page-popular__img {
+  flex-basis: 45%;
+  height: 366px;
+  height: 100%;
+  align-self: flex-end;
+  clip-path: polygon(0 0, 92% 0, 77% 100%, 0% 100%);
+}
+
+.page-popular__img img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-popular__awards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.page-popular__box {
+  display: flex;
+}
+
+.page-popular__link {
+  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #3f4d57;
+  font-weight: 400;
+}
+
+.page-popular__link span {
+  font-weight: 900;
+}
+
+.page-popular__info {
+  flex-basis: 50%;
+  padding: 45px 150px 0 0;
+  box-sizing: border-box;
+}
+
+.page-popular__achive {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #1e2022;
+  margin-bottom: 5px;
+}
+
+.page-popular__count {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  color: #1e2022;
+  margin-bottom: 5px;
+}
+
+.page-popular__about {
+  padding: 30px 25px 0 0;
+  flex-basis: 32.2%;
+  background-color: #fff;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 6% 100%);
+  text-align: right;
+}
+
+.page-popular__overall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-popular__skills {
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  color: #52616b;
+}
+
+.page-popular__skills span {
+  display: block;
+  margin-left: -10px;
+  margin-top: 3px;
+}
+
+.page-popular__percent {
+  font-size: 60px;
+  font-weight: 800;
+  color: #52616b;
+  letter-spacing: 2.5px;
+}
+
+.page-popular__name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  font-weight: 900;
+  color: #1e2022;
+  margin-bottom: 30px;
+}
+
+.page-popular__name span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #595d61;
+  display: block;
+  margin-top: 5px;
+}
+
+@media (max-width: 1170px) {
+  .page-popular__player {
+    clip-path: none;
+    background-color: initial;
+  }
+  .page-popular__img {
+    flex-basis: 50%;
+    clip-path: none;
+    align-self: start;
+  }
+  .page-popular__info {
+    padding: 30px 40px;
+    box-sizing: initial;
+    background-color: #c9d6df;
+    margin: -30px 0 30px 0;
+  }
+  .page-popular__overall {
+    display: none;
+  }
+  .page-popular__body {
+    flex-wrap: wrap;
+  }
+  .page-popular__player {
+    flex-basis: 85%;
+    margin: 0 auto;
+  }
+  .page-popular__about {
+    flex-basis: 100%;
+    text-align: center;
+    clip-path: none;
+    padding: 20px;
+  }
+  .page-popular__desc {
+    max-width: 550px;
+    margin: 20px auto;
+  }
+  .page-popular__box {
+    flex-direction: column;
+  }
+  .page-popular__img {
+    margin: 0 auto;
+  }
+  .page-popular__name {
+    font-size: 30px;
+    text-align: center;
+  }
+  .page-popular__name span {
+    font-size: 18px;
+  }
+  .page-popular__awards {
+    justify-content: center;
+  }
+  .page-popular__achivments {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .page-popular__player {
+    flex-basis: 100%;
+  }
+  .page-popular__info {
     padding: 20px;
   }
 }
